@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <table class="main-tbl">
+    <!-- <table class="main-tbl">
         <thead>
             <tr>
                 <th rowspan="2">Choose your plan</th>
@@ -69,6 +69,54 @@
                 <td><button>START</button></td>
             </tr>
         </tfoot>
+    </table> -->
+
+    <table class="second-table">
+        <thead class="second-table-heading">
+            <tr>
+                <th colspan="4">Purchased Equipments (June, 2006)</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Item Num#</th>
+                <th rowspan="2">Item Picture</th>
+                <th>Item Description</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <th>Shipping Handling, Instalation,etc</th>
+                <th>Expense</th>
+            </tr>
+
+        </thead>
+        <tbody class="second-table-body">
+            <tr>
+                <td rowspan="2">1.</td>
+                <td rowspan="2"><img src="data:image/png;base64,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" alt="Computer"></td>
+                <td>IBM Clone Computer.</td>
+                <td>$ 400.00</td>
+            </tr>
+            <tr>
+                <td>Shipping Handling, Instalation, etc</td>
+                <td>$ 20.00</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2.</td>
+                <td rowspan="2"><img src="data:image/jpeg;base64,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" alt="RAM 1 GB"></td>
+                <td>1 GB RAM Module for Computer.</td>
+                <td>$ 50.00</td>
+            </tr>
+            <tr>
+                <td>Shipping Handling, Instalation, etc</td>
+                <td>$ 14.00</td>
+            </tr>
+
+        </tbody>
+        <tfoot class="second-table-foot">
+            <tr>
+                <th colspan="4">Purchased Equipments (June, 2006)</th>
+            </tr>
+        </tfoot>
+
     </table>
     
 </body>
